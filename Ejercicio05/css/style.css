@@ -2,14 +2,14 @@
     box-sizing: border-box;
 }
 
-nav ul{
+nav ul {
     display: flex;
     list-style-type: none;
     justify-content: center;
     align-items: center;
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
     height: 58px;
     padding: 20px;
@@ -17,4 +17,16 @@ nav ul li a{
     text-align: center;
     border-top-left-radius: 20px;
     border-top-right-radius: 10px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: brown;
+}
+
+nav ul li #inicio:active {
+    background-color: white;
+    color: brown;
 }
