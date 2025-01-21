@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+nav ul li:first-child {
+    border: 1px solid black;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+nav ul li:last-child {
+    border: 1px solid black;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+nav ul li:hover {
+    background-color: black;
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li:visited {
+    background-color: black;
+    color: white;
+}
