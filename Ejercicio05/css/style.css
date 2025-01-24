@@ -30,3 +30,15 @@ nav ul li a:target {
     background-color: white;
     color: brown;
 }
+
+main section {
+    display: none;
+}
+
+main section:target {
+    display: block;
+    padding: 20px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+}
