@@ -15,17 +15,22 @@
  }
 
  nav ul li > ul {
-    display: none;
+    height: 0px;
+    font-size: 0px;
+    overflow: hidden;
     position: absolute;
+    margin-top: -5px;
     top: 100%;
     left: 0;
     padding: 0;
     list-style: none;
+    transition: height 0.5s ease, font-size 0.5s ease;
+    flex-direction: column;
 }
 
  nav ul li:hover > ul {
-    display: block;
-    height: 100px;
+    height: 200px;
+    font-size: inherit;
  }
 
  nav ul li > ul li {
