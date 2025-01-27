@@ -11,7 +11,8 @@
  nav ul li {
     position: relative;
     padding: 10px;
-    background-color: rgb(68, 193, 46);
+    background-image: linear-gradient(45deg, rgba(68, 193, 46, 0.34) 33%, rgba(80, 163, 63, 0.788) 33%, rgba(68, 193, 46, 0.763));
+    flex: 1 1 auto;
  }
 
  nav ul li > ul {
@@ -19,13 +20,13 @@
     font-size: 0px;
     overflow: hidden;
     position: absolute;
-    margin-top: -5px;
     top: 100%;
     left: 0;
     padding: 0;
     list-style: none;
     transition: height 0.5s ease, font-size 0.5s ease;
     flex-direction: column;
+    width: 100%;
 }
 
  nav ul li:hover > ul {
@@ -34,7 +35,7 @@
  }
 
  nav ul li > ul li {
-    width: 100px;
+    width: 100%;
     background-image: linear-gradient(45deg, rgba(68, 193, 46, 0.8) 25%, rgba(100, 100, 100, 0.3),rgba(176, 196, 172, 0.8) 75%);
     transition: height 10s;
  }
