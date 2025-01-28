@@ -2,9 +2,21 @@
     box-sizing: border-box;
 }
 
+#menu {
+    display: none;
+}
+
+#menu:target {
+    display: inherit;
+}
+
 nav > ul {
     width: 500px;
     list-style-type: none;
+    position: absolute;
+    margin-left: -50px;
+    left: 0;
+    animation: lista 0.5s alternate both;
 }
 
 nav > ul > li {
@@ -33,4 +45,14 @@ nav > ul > li:hover > ul {
 nav > ul > li > ul > li {
     background-image: linear-gradient(45deg, #f6d365 0%, #cd1919b8 50%, #fda085 100%);
     padding: 20px;
+}
+
+@keyframes lista {
+    0% {
+        left: -500px;
+    }
+    100% {
+        left: 0;
+    }
+    
 }

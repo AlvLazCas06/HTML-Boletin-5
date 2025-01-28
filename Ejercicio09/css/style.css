@@ -1,3 +1,41 @@
 * {
     box-sizing: border-box;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(45deg, #aa8f66 33%, #054A91 33%, #3E7CB1 33%);
+    height: 80px;
+}
+
+nav #izquierda {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: left;
+}
+
+nav #derecha {
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+}
+
+nav ul #logo {
+    background-image: url('../img/Microsoft.png');
+    width: 50px;
+    height: 80px;
+    transition: width 0.5s;
+    margin-left: -50px;
+}
+
+nav ul #logo:hover {
+    width: 150px;
+}
+
+nav ul li {
+    padding: 20px;
+}
